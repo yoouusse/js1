@@ -3,10 +3,10 @@
     padding: 0;
 }
 body{
-    background: #42275a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            font-family:Arial, Helvetica, sans-serif;
+    background: #42275a;
+    background: -webkit-linear-gradient(to top, #734b6d, #42275a); 
+    background: linear-gradient(to top, #734b6d, #42275a); 
+    font-family:Arial, Helvetica, sans-serif;
     background-repeat: no-repeat;
 }
 a {
@@ -66,6 +66,14 @@ ul li a:hover,.active{
     align-items: center;
     overflow: hidden;
 }
+.landing::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top,#523360,transparent);
+}
 .landing img{
     position: absolute;
     width: 100%;
@@ -82,8 +90,20 @@ ul li a:hover,.active{
     text-transform: uppercase ;
     font-weight: bold;
     transform: translateY(-160px);
-    z-index: 99;
+    /* z-index: 99; */
 }
-
-
 /*End main  */
+
+.content{
+    color: #fff;
+    padding: 30px;
+}
+.content h2{
+    margin: 20PX;
+    font-size: 30px;
+    
+}
+.content p{
+    margin: 20PX;
+
+}
